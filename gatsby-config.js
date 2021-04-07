@@ -5,8 +5,8 @@ module.exports = {
       name: `文西`,
       summary: `定居杭州的前端工程师，长期关注计算机科学、认知心理学和PKM领域`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `文西的博客`,
+    siteUrl: `https://wenxi.tech/`,
     social: {
       github: `wolfstark`,
     },
@@ -125,6 +125,6 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
