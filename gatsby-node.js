@@ -113,3 +113,16 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
+exports.onCreateWebpackConfig = ({
+  stage,
+  getConfig,
+  rules,
+  loaders,
+  actions,
+}) => {
+  if (getConfig().mode === "production") {
+    actions.setWebpackConfig({
+      devtool: false,
+    })
+  }
+}
