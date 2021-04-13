@@ -63,6 +63,10 @@
 }
 
 /* HTML elements */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 footer {
   padding: var(--spacing-6) var(--spacing-0);
