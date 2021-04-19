@@ -5,13 +5,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,24 +19,24 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm i
-    - run: npm run build --if-present
-    - name: ssh deploy
-      # You may pin to the exact commit or the version.
-      # uses: easingthemes/ssh-deploy@4042d3876fbba3e76b95c16a18830ab0c152aeec
-      uses: easingthemes/ssh-deploy@v2.1.4
-      with:
-        # Private Key
-        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        # Remote host
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        # Source directory
-        SOURCE: "public/"
-        # Target directory
-        TARGET: ${{ secrets.REMOTE_TARGET }}
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm i
+      - run: npm run build --if-present
+      - name: ssh deploy
+        # You may pin to the exact commit or the version.
+        # uses: easingthemes/ssh-deploy@4042d3876fbba3e76b95c16a18830ab0c152aeec
+        uses: easingthemes/ssh-deploy@v2.1.6
+        with:
+          # Private Key
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          # Remote host
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          # Source directory
+          SOURCE: "public/"
+          # Target directory
+          TARGET: ${{ secrets.REMOTE_TARGET }}
