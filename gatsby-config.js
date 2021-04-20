@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "__GATSBY_IPFS_PATH_PREFIX__",
   siteMetadata: {
     title: `文西的博客`,
     author: {
@@ -12,6 +13,7 @@ module.exports = {
     },
   },
   plugins: [
+    "gatsby-plugin-ipfs",
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
