@@ -15,7 +15,6 @@
     "gatsby-plugin-gatsby-cloud": "^2.2.0",
     "gatsby-plugin-google-analytics": "^3.2.0",
     "gatsby-plugin-image": "^1.2.0",
-    "gatsby-plugin-ipfs": "^2.0.2",
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-offline": "^4.2.0",
     "gatsby-plugin-postcss": "^4.2.0",
@@ -50,7 +49,7 @@
     "url": "git+https://github.com/wolfstark/blog-app.git"
   },
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
