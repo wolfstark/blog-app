@@ -1,5 +1,7 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const webpack = require("webpack")
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -120,9 +122,18 @@ exports.onCreateWebpackConfig = ({
   loaders,
   actions,
 }) => {
+  const config = getConfig()
   if (getConfig().mode === "production") {
-    actions.setWebpackConfig({
-      devtool: false,
-    })
+    config.devtool = false
   }
+  config.plugins = [
+    ...config.plugins,
+    new NodePolyfillPlugin(),
+    new webpack.ProvidePlugin({
+      Buffer: ["buffer", "Buffer"],
+      process: "process/browser",
+    }),
+  ]
+
+  actions.replaceWebpackConfig(config)
 }

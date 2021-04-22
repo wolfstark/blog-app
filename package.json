@@ -28,6 +28,8 @@
     "gatsby-source-filesystem": "^3.3.0",
     "gatsby-transformer-remark": "^4.0.0",
     "gatsby-transformer-sharp": "^3.3.0",
+    "ipfs": "^0.54.4",
+    "orbit-db": "^0.26.1",
     "postcss": "^8.2.10",
     "prismjs": "^1.23.0",
     "react": "^17.0.2",
@@ -36,6 +38,7 @@
     "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
+    "node-polyfill-webpack-plugin": "^1.1.0",
     "prettier": "2.2.1"
   },
   "homepage": "https://wenxi.tech",
