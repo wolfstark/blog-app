@@ -24,7 +24,18 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>© {new Date().getFullYear()} wenxi</footer>
+      <div className="prose fixed right-0 top-0 bottom-0 shadow-lg py-10 px-5 bg-gray-50">
+        <h3>Contents</h3>
+        <ul>
+          <li>
+            <Link to="/">home</Link>
+          </li>
+          <li>
+            <Link to="/markdown">markdown</Link>
+          </li>
+        </ul>
+      </div>
+      <footer className="fixed">© {new Date().getFullYear()} wenxi</footer>
     </div>
   )
 }
