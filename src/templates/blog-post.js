@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Cusdis from "gatsby-plugin-cusdis"
+import ReactCusdis from "../components/ReactCusdis"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,9 +12,14 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
 
   const cusdisAttrs = {
+    // pageId: post.id,
+    // pageUrl: `${location.href}`,
+    // pageTitle: post.frontmatter.title,
+    host: "https://cusdis.com",
+    appId: "dc633c69-0163-49c3-9aca-2f6b99af3d92",
     pageId: post.id,
-    pageUrl: `${location.href}`,
     pageTitle: post.frontmatter.title,
+    pageUrl: `${location.href}`,
   }
 
   return (
@@ -39,7 +45,15 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        <Cusdis attrs={cusdisAttrs} lang="zh-cn" />
+        <ReactCusdis attrs={cusdisAttrs} lang="zh-cn" />
+        <div
+          id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="dc633c69-0163-49c3-9aca-2f6b99af3d92"
+          data-page-id={cusdisAttrs.id}
+          data-page-url={cusdisAttrs.pageUrl}
+          data-page-title={cusdisAttrs.pageTitle}
+        ></div>
         <footer>
           <Bio />
         </footer>

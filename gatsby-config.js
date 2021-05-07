@@ -12,13 +12,6 @@ module.exports = {
     },
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-cusdis`,
-      options: {
-        appId: `dc633c69-0163-49c3-9aca-2f6b99af3d92`,
-        // host: `https://wenxi.tech`, // not required, default https://cusdis.com
-      },
-    },
     "gatsby-plugin-postcss",
     `gatsby-plugin-image`,
     {
