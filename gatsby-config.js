@@ -53,10 +53,19 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: `G-TDB2BS2PJG`,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-baidu-analytics`,
       options: {
-        trackingId: `G-TDB2BS2PJG`,
+        // baidu analytics siteId
+        siteId: "0ac0022b126c43f0e8084ba1985c5cc8",
+        // Put analytics script in the head instead of the body [default:false]
+        head: false,
       },
     },
     {
