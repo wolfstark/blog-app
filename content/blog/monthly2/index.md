@@ -177,5 +177,5 @@ describe('utils', () => {
 ### [【速学速记】《设计模式》这样学就对了！](https://juejin.cn/post/6953423646664687652)
 ## 杂谈
 
-- [一项研究](#)(https://blog.rize.io/blog/phones-and-apps-reduce-your-ability-to-focus-even-when-they-dont-distract-you)发现，哪怕手机只是放在一旁，都会分散你的注意力。研究人员建议，对于要求专注的工作，最好将手机放到另一间房间。 
+- [一项研究](https://blog.rize.io/blog/phones-and-apps-reduce-your-ability-to-focus-even-when-they-dont-distract-you)发现，哪怕手机只是放在一旁，都会分散你的注意力。研究人员建议，对于要求专注的工作，最好将手机放到另一间房间。 
 - 世界上每个程序员一觉醒来，都会有"我应该开发一个 Todo 清单程序的想法"，人们喜欢开发生产力工具。所以，你应该尽量避免将生产力工具作为创业项目，那类软件根本没有护城河。---[《我如何因为创业损失1000万美元的故事》](https://threadreaderapp.com/thread/1376985869542887425.html)
