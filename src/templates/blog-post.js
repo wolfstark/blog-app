@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import Cusdis from "gatsby-plugin-cusdis"
 import ReactCusdis from "../components/ReactCusdis"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
