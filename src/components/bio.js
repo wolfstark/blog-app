@@ -47,7 +47,7 @@ const Bio = () => {
           我是 <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a href={`https://github.com/${social?.github || ``}`}>
-            如果你对我写的东西感兴趣，可以在Github上关注我
+            如果你对我写的东西感兴趣，可以通过RSS订阅本站
           </a>
         </p>
       )}
