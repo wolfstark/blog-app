@@ -43,7 +43,7 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        <hr className="my-10"/>
         <ReactCusdis attrs={cusdisAttrs} lang="zh-cn" />
         <div
           id="cusdis_thread"
