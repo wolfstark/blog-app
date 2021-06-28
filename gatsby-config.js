@@ -3,7 +3,7 @@ module.exports = {
     title: `文西的博客`,
     author: {
       name: `文西`,
-      summary: `定居杭州的前端工程师，长期关注计算机科学、认知心理学和PKM领域`,
+      summary: `定居杭州的前端工程师，长期关注软件开发、认知心理学和PKM领域`,
     },
     description: `文西的博客`,
     siteUrl: `https://wenxi.tech/`,
