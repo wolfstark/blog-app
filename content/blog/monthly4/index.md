@@ -65,7 +65,7 @@ Win11 上周推出开发者预览版，大量使用毛玻璃效果，我们可�
 
 ## 开发工具
 
-### [可视化生成 Nginx 配置](https://www.digitalocean.com/community/tools/nginx "可视化生成Nginx配置")
+### [可视化生成 Nginx 配置](https://www.digitalocean.com/community/tools/nginx)
 
 digitalocean 开源的工具，拯救 nginx 配置苦手，毕竟大部分前端一年也改不了几次 nginx，提供几种常见预设
 ![](https://tva1.sinaimg.cn/large/008i3skNly1gs5yl231cwj319x0u0wrz.jpg)
